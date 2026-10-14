@@ -891,7 +891,7 @@ public:
 
 	/**
     Notional character width as known to East Asian (Chinese, Japanese,
-    Korean (CJK)) coding systems.
+    KoreanÂ (CJK)) coding systems.
     */
 	enum TCjkWidth
 		{
@@ -2925,13 +2925,9 @@ public:
     */
     enum TDefaultShrinkRatios {EShrinkRatio1=256, EShrinkRatioDflt=512};
 
-#ifndef SYMBIAN_ENABLE_SPLIT_HEADERS
 	/**
     @internalComponent
     */
-#else
-private:
-#endif
     typedef void (*TWalkFunc)(TAny*, TCellType, TAny*, TInt);
 
 public:
